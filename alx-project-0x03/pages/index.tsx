@@ -1,4 +1,5 @@
 
+
 import Button from "@/components/common/Button";
 import { useRouter } from "next/router";
 
@@ -34,4 +35,3 @@ export default function Home() {
     </div>
   );
 }
-
