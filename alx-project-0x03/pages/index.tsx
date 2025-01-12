@@ -1,6 +1,8 @@
 
 
 import Button from "@/components/common/Button";
+import Footer from "@/components/layouts/Footer";
+import Header from "@/components/layouts/Header";
 import { useRouter } from "next/router";
 
 interface PageRouteProps {
@@ -16,6 +18,8 @@ export default function Home() {
   }
 
   return (
+    <>
+    <Header />
     <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center text-center">
       {/* Welcome Message */}
       <h1 className="text-4xl font-bold text-gray-800 mb-4">
@@ -33,5 +37,7 @@ export default function Home() {
         <Button action={() => routeToNextPage({ pageRoute: '/counter-app'})} buttonLabel="Contact us" buttonBackgroundColor="orange" />
       </div>
     </div>
+    <Footer />
+    </>
   );
 }
